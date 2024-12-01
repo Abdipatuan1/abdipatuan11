@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>laptopsiAbdi</title>
+<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+<p><h1>SELAMAT DATANG Di LaptopsiAbdi....... : )</p>
+	<hr>
+<p>
+<img src="abdi1.jpg" align="right">
+</p>
+<script>
+      function hitung() {
+        var angka1 = parseFloat(document.getElementById("angka1").value);
+        var angka2 = parseFloat(document.getElementById("angka2").value);
+        var operator = document.getElementById("operator").value;
+        var hasil;
+
+        if (operator == "tambah") {
+          hasil = angka1 + angka2;
+        } else if (operator == "kurang") {
+          hasil = angka1 - angka2;
+        } else if (operator == "kali") {
+          hasil = angka1 * angka2;
+        } else if (operator == "bagi") {
+          hasil = angka1 / angka2;
+        }
+
+        document.getElementById("hasil").value = hasil;
+      }
+    </script>
+</head>
+<body background ="12345.jpg">
+<p> <h1 style="color: blueviolet;">KALKULATOR SEDERHANA</h1></p>
+
+	<form>
+      <label for="angka1" style="color:blue;">ANGKA PERTAMA (1) :</label>
+      <input type="number" id="angka1"><br>
+
+      <label for="operator">OPERATOR:</label>
+      <select id="operator">
+        <option value="tambah">+</option>
+        <option value="kurang">-</option>
+        <option value="kali">*</option>
+        <option value="bagi">/</option>
+      </select><br>
+
+       <label for="angka1" style="color:red;">ANGKA KEDUA (2) :</label>
+      <input type="number" id="angka2"><br>
+
+      <button type="button" onclick="hitung()">HITUNG</button><br> 
+
+      <label for="hasil" style="color:blueviolet;">HASIL:</label>
+      <input type="text" id="hasil" readonly>
+      <button type="button" onclick="reset()">RESET</button><br>
+    </form>
+  
+<p>Selamat menjelajah!</p>
+<p>Hormat Saya,<br>
+Patuan Abdi W Sitanggang<br>
+Penulis<br>
+Banten-INDONESIA</p>
+  <div class="topnav"> 
+	<a href="luas segitiga.html">>>>>>> KALKULATOR LUAS SEGITIGA <<<<<<</a> 
+</div>
+<p>
+<img src="gambar unipi.jpeg" align="left">
+</p>
+</body>
+</html>
